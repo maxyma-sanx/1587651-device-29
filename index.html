@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body class="page-body">
+
+  <header class="header center">
+    <div class="logo-bar">
+      <a class="header-logo">
+        <img src="/img/icons/device-logo.svg" alt="Логотип Device" width="165" height="35">
+      </a>
+    </div>
+    <div class="header-bar">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
+        <button type="submit" class="search-button">Найти</button>
+      </form>
+      <a href="#" class="login">Войти</a>
+      <a href="#" class="compare">Сравнить</a>
+      <a href="#" class="cart">Корзина</a>
+    </div>
+    <nav class="nav-bar">
+      <ul class="navigation-menu">
+        <li class="navigation-item navigation-item-catalog">
+          <a href="catalog.html" class="navigation-item-link">Каталог товаров</a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-list">
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Виртуальная реальность</a></li>
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Моноподы для селфи</a></li>
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Экшн-камеры</a></li>
+            </ul>
+            <ul class="dropdown-list">
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Фитнес-браслеты</a></li>
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Умные часы</a></li>
+            </ul>
+            <ul class="dropdown-list">
+              <li class="dropdown-item"><a href="#" class="dropdown-item-link">Квадрокоптер</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navigation-item navigation-item-delivery"><a href="#" class="navigation-item-link">Доставка</a></li>
+        <li class="navigation-item navigation-item-warranty"><a href="#" class="navigation-item-link">Гарантия</a></li>
+        <li class="navigation-item navigation-item-contacts"><a href="#" class="navigation-item-link">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <footer class="footer">
+
+  </footer>
+
+</body>
+
+<script src="js/login.js"></script>
+<script src="js/map.js"></script>
+
 </html>
