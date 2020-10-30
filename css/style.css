@@ -94,7 +94,7 @@ img {
 /* * Center container */
 
 .center {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -149,6 +149,7 @@ img {
 /* * Header */
 
 .header {
+  width: 1160px;
   padding-left: 60px;
   background: linear-gradient(180deg, var(--basic-white) 18%, var(--special-light-yellow) 18%);
 }
@@ -436,6 +437,8 @@ img {
 /* * Main slider */
 
 .main-slider {
+  width: 1160px;
+  margin-bottom: 112px;
   background: linear-gradient(180deg, var(--special-light-yellow) 24%, var(--basic-white) 24%);
 }
 
@@ -518,7 +521,9 @@ img {
 }
 
 .slider-info-text {
+  width: 480px;
   margin: 0;
+  margin-bottom: 59px;
   padding: 0;
 }
 
@@ -526,7 +531,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 59px;
   margin-bottom: 50px;
 }
 
@@ -614,5 +618,65 @@ img {
 }
 
 /* * Main slider end */
+
+/* * Popular products */
+
+.popular-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular-products-item {
+  width: 160px;
+}
+
+.popular-products-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 38px;
+  background-color: var(--special-light-yellow);
+}
+
+.popular-products-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-products-title {
+  font-family: "Gilroy", Arial, serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
+.popular-products-title.title-fitness {
+  letter-spacing: normal;
+}
+
+.popular-products-link:hover .popular-products-container,
+.popular-products-link:focus .popular-products-container {
+  background-color: var(--special-yellow);
+}
+
+.popular-products-link:active .popular-products-image,
+.popular-products-link:active .popular-products-title {
+  opacity: 0.3;
+}
+
+/* * Popular products end*/
+
+/* * Services */
+
+
+/* * Services End */
 
 /* * Main end */
