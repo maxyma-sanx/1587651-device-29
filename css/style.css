@@ -1079,7 +1079,7 @@ img {
   grid-area: list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0;
   margin-top: 46px;
   margin-left: 11px;
