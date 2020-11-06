@@ -460,7 +460,7 @@ img {
 }
 
 .dropdown-item-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
   margin-right: 63px;
   color: var(--basic-black);
@@ -629,7 +629,7 @@ img {
 .slider-table {
   margin-top: 48px;
   margin-left: -2px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, serif;
   font-weight: 300;
 }
 
@@ -1173,8 +1173,7 @@ img {
 .footer-button-item:active .footer-login::before,
 .footer-button-item:active .footer-compare::before,
 .footer-button-item:active .footer-cart::before,
-.footer-button-item:active .catalog-footer-login::before,
-  {
+.footer-button-item:active .catalog-footer-login::before {
   opacity: 0.3;
 }
 
@@ -1528,7 +1527,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", Arial, serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
