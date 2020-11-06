@@ -13,7 +13,7 @@
   font-family: "Gilroy";
   font-weight: 800;
   font-style: normal;
-  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
     url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/gilroyextrabold.woff") format("woff");
 }
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
@@ -60,8 +60,8 @@
   --black-opacity06: rgba(0, 0, 0, 0.6);
 
   --modal-shadow: rgba(0, 0, 0, 0.15);
-  --modal-input-background: #F2F2F2;
-  --modal-input-background-hover: #EAEAEA;
+  --modal-input-background: #f2f2f2;
+  --modal-input-background-hover: #eaeaea;
 
   --filter-scale-color: #b7b7b7;
   --filter-toggle-shadow: rgba(0, 0, 0, 0.18);
@@ -79,7 +79,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -136,7 +136,7 @@ img {
 .button {
   position: relative;
   padding: 0;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -163,7 +163,7 @@ img {
   height: 62px;
   text-align: center;
   padding: 20px 15px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -386,7 +386,7 @@ img {
 }
 
 .navigation-item-link {
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -536,7 +536,7 @@ img {
 .slider-info-number {
   padding: 0;
   margin: 0;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
@@ -564,7 +564,7 @@ img {
   margin-top: -108px;
   margin-bottom: 26px;
   padding: 0;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -629,7 +629,7 @@ img {
 .slider-table {
   margin-top: 48px;
   margin-left: -2px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
 }
 
@@ -654,7 +654,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  top: 320px;
+  bottom: 141px;
   right: 20px;
   width: 72px;
   margin: 0;
@@ -669,7 +669,7 @@ img {
 /* * Popular products */
 
 .popular-products {
-  margin-bottom: 65px;
+  margin-bottom: 166px;
 }
 
 .popular-products-list {
@@ -706,7 +706,7 @@ img {
 
 .popular-products-title {
   margin-left: 1px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -733,28 +733,40 @@ img {
 /* * Services */
 
 .services {
-  height: 388px;
-  background: linear-gradient(180deg, var(--basic-white) 26%, var(--basic-light-grey) 26%);
-  margin-bottom: 91px;
+  min-height: 288px;
+  background: var(--basic-light-grey);
+  margin-bottom: 90px;
 }
 
 .services-container {
   display: grid;
   grid-template-columns: 284px auto;
+  position: relative;
+  bottom: 101px;
 }
 
 .services-buttons {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 320px;
   padding-top: 80px;
-  border-right: 7px solid var(--basic-black);
+  padding-bottom: 25px;
+}
+
+.services-buttons::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0;
+  min-height: 112%;
+  width: 7px;
+  background-color: var(--basic-black);
 }
 
 .services-button {
   width: 100%;
-  padding: 10px 114px 10px 0px;
+  padding: 10px 119px 10px 0px;
   margin-bottom: 19px;
   border: none;
   background-color: transparent;
@@ -763,7 +775,7 @@ img {
 
 .services-button-current {
   width: 100%;
-  padding: 10px 114px 10px 0px;
+  padding: 10px 119px 10px 0px;
   margin-bottom: 19px;
   background-color: var(--basic-black);
   color: var(--special-light-yellow);
@@ -813,7 +825,7 @@ img {
 }
 
 .services-item-title {
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -920,7 +932,7 @@ img {
 .info-title {
   margin-bottom: 38px;
   margin-top: 44px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -938,7 +950,7 @@ img {
   margin-top: 33px;
   margin-left: 32px;
   margin-bottom: 64px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -1196,7 +1208,7 @@ img {
 
 .footer-nav-item {
   margin-right: 33px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1296,12 +1308,12 @@ img {
 .catalog-navigation {
   padding-left: 80px;
   margin-top: 45px;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .catalog-title {
   margin-bottom: 30px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1312,7 +1324,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1357,11 +1369,11 @@ img {
 }
 
 .catalog-header {
-  background: linear-gradient(90deg, var(--basic-half-grey) 36.8%, var(--basic-light-grey) 36.8%);
+  background: linear-gradient(90deg, var(--basic-half-grey) 50%, var(--basic-light-grey) 50%);
 }
 
 .catalog-body {
-  background: linear-gradient(-90deg, var(--basic-white) 63.2%, var(--basic-light-grey) 63.2%);
+  background: linear-gradient(-90deg, var(--basic-white) 50%, var(--basic-light-grey) 50%);
 }
 
 .catalog-header-content,
@@ -1373,7 +1385,7 @@ img {
 .catalog-filter-text {
   margin-top: 25px;
   margin-left: 60px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1384,13 +1396,14 @@ img {
 .catalog-header-sorting {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--basic-light-grey);
 }
 
 .catalog-sorting-text {
   margin-top: 25px;
   margin-left: 72px;
   margin-right: 48px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1401,9 +1414,10 @@ img {
 .catalog-sorting-list {
   display: flex;
   flex-wrap: wrap;
+  width: 520px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -1411,7 +1425,7 @@ img {
 }
 
 .catalog-sorting-item {
-  margin: 25px 5px 25px 25px;
+  padding: 25px 5px 25px 25px;
   opacity: 0.3;
 }
 
@@ -1464,7 +1478,7 @@ img {
 
 .filter-item-legend {
   position: relative;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -1527,7 +1541,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -1685,7 +1699,8 @@ img {
 }
 
 .catalog-product-container {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-color: var(--basic-white);
 }
 
 .catalog-product-list {
@@ -1742,7 +1757,7 @@ img {
   position: absolute;
   top: 18px;
   left: -12px;
-  padding: 4px 100px;
+  padding: 4px 105px;
   background-color: var(--special-yellow);
   z-index: -10;
 }
@@ -1750,7 +1765,7 @@ img {
 .in-cart-button:hover::before,
 .in-cart-button:focus::before {
   top: 0px;
-  padding: 20px 100px;
+  padding: 20px 105px;
   transition: 0.2s;
 }
 
@@ -1760,7 +1775,7 @@ img {
 
 .compare-button {
   display: block;
-  padding: 10px 4px;
+  padding: 10px 15px;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
@@ -1781,7 +1796,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: 1px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1794,7 +1809,7 @@ img {
   margin: 0;
   margin-top: 3px;
   margin-right: -1px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -1828,7 +1843,7 @@ img {
 
 .catalog-pagination-list {
   margin-left: 72px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1929,7 +1944,7 @@ img {
 .write-us-item label {
   display: block;
   margin-bottom: 10px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1940,7 +1955,7 @@ img {
   padding: 16px 20px;
   margin-right: 40px;
   margin-bottom: 31px;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -1951,7 +1966,7 @@ img {
 .write-us-item textarea {
   width: 760px;
   padding: 16px 10px 23px 20px;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
